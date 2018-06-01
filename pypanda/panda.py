@@ -12,16 +12,16 @@ class Panda(object):
     def __init__(self, expression_file, motif_file, ppi_file=None, remove_missing=False):
         '''Load expression, motif and optional ppi data.'''
         #load data from provided files
-        #self.expression_data = pd.read_table(expression_file, sep='\t', header=None, comment='#')
-        self.expression_data = expression_file
+        self.expression_data = pd.read_table(expression_file, sep='\t', header=None, comment='#')
+        
         if motif_file is not None:
-            #self.motif_data = pd.read_table(motif_file, sep='\t', header=None, comment='#')
-            self.motif_data = motif_file
+            self.motif_data = pd.read_table(motif_file, sep='\t', header=None, comment='#')
+            
         else:
             self.motif_data = None
         if ppi_file is not None:
-            # self.ppi_data = pd.read_table(ppi_file, sep='\t', header=None, comment='#')
-            self.ppi_data = ppi_file
+            self.ppi_data = pd.read_table(ppi_file, sep='\t', header=None, comment='#')
+            
         else:
             self.ppi_data = None
         #remove missing befor analysis
