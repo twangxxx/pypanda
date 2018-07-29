@@ -1,6 +1,6 @@
-from __future__ import print_function
+#from __future__ import print_function
 
-from pypanda import Panda
+# from pypanda import Panda
 
 import numpy as np
 import pandas as pd
