@@ -4,6 +4,7 @@
 # from pypanda import Lioness
 # from pypanda import AnalyzePanda
 
+import AnalyzePanda
 import numpy as np
 import pandas as pd
 import networkx as nx
